@@ -450,11 +450,13 @@ namespace Threshold_Miku_Customizer
             // 
             this.thresholdMikuToolStripMenuItem.Name = "thresholdMikuToolStripMenuItem";
             resources.ApplyResources(this.thresholdMikuToolStripMenuItem, "thresholdMikuToolStripMenuItem");
+            this.thresholdMikuToolStripMenuItem.Click += new System.EventHandler(this.thresholdMikuToolStripMenuItem_Click);
             // 
             // thresholdMikuLightToolStripMenuItem
             // 
             this.thresholdMikuLightToolStripMenuItem.Name = "thresholdMikuLightToolStripMenuItem";
             resources.ApplyResources(this.thresholdMikuLightToolStripMenuItem, "thresholdMikuLightToolStripMenuItem");
+            this.thresholdMikuLightToolStripMenuItem.Click += new System.EventHandler(this.thresholdMikuLightToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 

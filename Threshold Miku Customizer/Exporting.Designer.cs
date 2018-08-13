@@ -40,7 +40,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar1.Location = new System.Drawing.Point(12, 12);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(558, 20);
+            this.progressBar1.Size = new System.Drawing.Size(562, 24);
             this.progressBar1.TabIndex = 0;
             // 
             // timer1
@@ -55,11 +55,8 @@
             this.ControlBox = false;
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(602, 87);
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(602, 87);
             this.Name = "Exporting";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Exporting...";
             this.ResumeLayout(false);
 

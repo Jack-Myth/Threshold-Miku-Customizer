@@ -171,9 +171,9 @@ namespace Threshold_Miku_Customizer {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LogginMask {
+        internal static System.Drawing.Bitmap LoginBG {
             get {
-                object obj = ResourceManager.GetObject("LogginMask", resourceCulture);
+                object obj = ResourceManager.GetObject("LoginBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -181,9 +181,9 @@ namespace Threshold_Miku_Customizer {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LoginBG {
+        internal static System.Drawing.Bitmap LoginMask {
             get {
-                object obj = ResourceManager.GetObject("LoginBG", resourceCulture);
+                object obj = ResourceManager.GetObject("LoginMask", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

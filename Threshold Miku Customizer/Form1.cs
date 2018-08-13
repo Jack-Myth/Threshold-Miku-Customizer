@@ -36,8 +36,7 @@ namespace Threshold_Miku_Customizer
         private void LoadImageFor(string PicID,PictureBox PicBox)
         {
             openFileDialog1.Filter = "Supported Image|*.png;*.jpg;*.jpeg";
-            this.openFileDialog1.ShowDialog();
-            if (openFileDialog1.FileName != "")
+            if (openFileDialog1.ShowDialog()==DialogResult.OK)
             {
                 CodeVars[PicID] = openFileDialog1.FileName;
                 PicBox.BackgroundImage = MyFunc.LoadImageByPath(openFileDialog1.FileName);
@@ -257,10 +256,11 @@ namespace Threshold_Miku_Customizer
             BackupAndRestore_BGPic.BackgroundImage = (Image)CurrentTheme.GetObject("BackupWizard");
             SystemInfo_BGPic.BackgroundImage = (Image)CurrentTheme.GetObject("SystemInfo");
             Loggin_BGPic.BackgroundImage = (Image)CurrentTheme.GetObject("LoginBG");
-            SecurityWizard_BG.BackgroundImage = (Image)CurrentTheme.GetObject("bg_security_wizard");
+            SecurityWizard_BGPic.BackgroundImage = (Image)CurrentTheme.GetObject("bg_security_wizard");
             CDKey_BGPic.BackgroundImage = (Image)CurrentTheme.GetObject("CDKeyWizard");
             //MainUI_BGPic.Image = (Image)CurrentTheme.GetObject("MainUIMask");
             checkCollapsedSidebar.Checked = false;
+            checkCollapsedSidebar_CheckedChanged(checkCollapsedSidebar, new EventArgs());
             Settings_BGPic.Image = (Image)CurrentTheme.GetObject("SettingsMask");
             Installation_BGPic.Image = (Image)CurrentTheme.GetObject("InstallationMask");
             BackupAndRestore_BGPic.Image = (Image)CurrentTheme.GetObject("BackupAndRestoreMask");
@@ -268,6 +268,7 @@ namespace Threshold_Miku_Customizer
             Loggin_BGPic.Image = (Image)CurrentTheme.GetObject("LoginMask");
             SecurityWizard_BGPic.Image = (Image)CurrentTheme.GetObject("TwoFactorMask");
             CDKey_BGPic.Image = (Image)CurrentTheme.GetObject("CDKeyWizardMask");
+            GameListPanel.BackgroundImage = (Image)CurrentTheme.GetObject("FadeLR");
             foreach (Label tmpGameListItem in GameListControls)
                 onGameListItemLeaved(tmpGameListItem, new EventArgs());
         }
@@ -405,7 +406,27 @@ namespace Threshold_Miku_Customizer
 
         private void checkUpdateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/Jack-Myth/Threshold-Miku-Customizer");
+            System.Diagnostics.Process.Start("https://github.com/Jack-Myth/Threshold-Miku-Customizer/releases");
+        }
+
+        private void thresholdMikuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CurrentTheme = new ResourceManager("Threshold_Miku_Customizer.ThresholdMiku", Assembly.GetExecutingAssembly());
+            ResetCodeVars();
+            ResetPreview();
+            Loggin_BGPic.Size = Loggin_BGPic.Image.Size;
+            Installation_BGPic.Size = Installation_BGPic.Image.Size;
+            SecurityWizard_BGPic.Size = SecurityWizard_BGPic.Image.Size;
+        }
+
+        private void thresholdMikuLightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CurrentTheme = new ResourceManager("Threshold_Miku_Customizer.ThresholdMikuLight", Assembly.GetExecutingAssembly());
+            ResetCodeVars();
+            ResetPreview();
+            Loggin_BGPic.Size = Loggin_BGPic.Image.Size;
+            Installation_BGPic.Size = Installation_BGPic.Image.Size;
+            SecurityWizard_BGPic.Size = SecurityWizard_BGPic.Image.Size;
         }
 
         private void ApplyResource()

@@ -1,0 +1,343 @@
+jackmyth.styles
+{
+  colors
+  {
+  	JackMyth.Translucent = "255 255 255 0"
+  	JackMyth.LittleTranslucent = "255 255 255 20"
+  	JackMyth.HalfTranslucent = "255 255 255 100"
+  	JackMyth.HalfOpacity = "255 255 255 150"
+  	JackMyth.Opacity = "255 255 255 200"
+  	JackMyth.LittleTranslucent180="255 255 255 180"
+  	JackMyth.LittleTranslucentInverse = "0 0 0 020"
+  	JackMyth.HalfTranslucentInverse = "0 0 0 100"
+  	JackMyth.HalfOpacityInverse = "0 0 0 150"
+  	JackMyth.OpacityInverse = "0 0 0 200"
+  	JackMyth.LittleTranslucent180Inverse="0 0 0 180"
+  }
+  styles
+  {
+	  //BackUp
+	  CBackupWizard
+	  {
+		  minimum-height=455
+	  	render_bg
+	  	{
+	  		//0="image_scale(x0,y0,x1,y1,graphics\JackMyth\BackupWizard)"
+	  		0="image(x0,y0,x1,y1,black)"
+	  	}
+	  }
+	  CBackupStartPage
+	  {
+	  	bgcolor=JackMyth.Translucent
+	  	render_bg{}
+	  }
+	  CBackupSelectGamesPage
+	  {
+	  	bgcolor=JackMyth.Translucent
+	  	render_bg{}
+	  }
+	  CBackupSelectDirectoryPage
+	  {
+	  	bgcolor=JackMyth.Translucent
+	  	render_bg{}
+	  }
+	  CBackupSelectOptionsPage
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,none,JackMyth.HalfTranslucent)
+	  	}
+	  }
+	  CBackupCopyFilesPage
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,none,JackMyth.HalfTranslucent)
+	  	}
+	  }
+	  CBackupCompletionPage
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,none,JackMyth.HalfTranslucent)
+	  	}
+	  }
+	  CBackupRestoreGamesPage
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,none,JackMyth.HalfTranslucent)
+	  	}
+	  }
+	  
+	  //InstallAppWizard
+	  CInstallAppWizard
+	  {
+	  	minimum-height=673
+	  	render_bg
+	  	{
+	  		//0="image_scale(x0,y0,x1,y1,graphics\JackMyth\InstallAppWizard)"
+	  	}
+	  }
+	  "CInstallAppWizard ImagePanel"
+	  {
+		  image=none
+	  	render
+	  	{
+	  		//0="fill(x0,y0,x1,y1,JackMyth.Translucent)"
+	  	}
+	  }
+	  CInstallSubChooseApps
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,none,JackMyth.HalfTranslucent)
+	  	}
+	  }
+	  CInstallAppsSubPanel
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,none,JackMyth.HalfTranslucent)
+	  	}
+	  }
+	  CInstallSubComplete
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,none,JackMyth.HalfTranslucent)
+	  	}
+	  }
+	  
+	  //CRegisterCDKeyWizard
+	  CRegisterCDKeyWizard
+	  {
+	  	render_bg
+	  	{
+	  		//0="image_scale(x0,y0,x1,y1,graphics\JackMyth\CDKeyWizard)"
+	  	}
+	  }
+	  CRegisterSubIntro
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,JackMyth.HalfOpacity,none)
+	  	}
+	  }
+	  CSSASubPanel
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,none,JackMyth.HalfOpacity)
+	  	}
+	  }
+	  "CSSASubPanel HTML"
+	  {
+	  	//bgcolor=JackMyth.HalfTranslucent
+	  }
+	  CRegisterSubEnterCDKey
+	  {
+	  	render_bg
+	  	{
+	  		//0=fill(x0,y0,x1,y1,JackMyth.HalfTranslucent)
+	  	}
+	  }
+	  CRegisterSubReceipt
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,JackMyth.HalfOpacity,none)
+	  	}
+	  }
+	  
+	  "CRegisterSubReceipt ListPanelInterior"
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,JackMyth.HalfOpacity,none)
+	  	}
+	  }
+	  
+	  RegisterSubReceipt
+	  {
+	  	render_bg
+	  	{
+	  		//0=gradient(x0,y0,x1,y1,JackMyth.HalfOpacity,none)
+	  	}
+	  }
+	  
+	  //CSystemInfoDialog
+	  CSystemInfoDialog
+	  {
+	  	minimum-height=622
+		  minimum-width=440
+		  render_bg
+		  {
+		  	//0="image_scale(x0,y0,x1,y1,graphics\JackMyth\SystemInfo)"
+		  	0="image(x0,y0,x1,y1,black)"
+		  }
+	  }
+	  CSurveySummarizeData
+	  {
+	  	render_bg
+	  	{
+	  		0=gradient(x0,y0,x1,y1,JackMyth.HalfOpacity,none)
+	  	}
+	  }
+	  //SettingsDialog
+	  CAccountPage
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSettingsSubFriends
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSubPanelOptionsFamily
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSettingsSubInGame
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSettingsSubStreaming
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSubPanelOptionsInterface
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSubPanelOptionsDownloads
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSubPanelOptionsCloud
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSettingsSubVoice
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSettingsSubMusic
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSettingsSubBroadcast
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSettingsSubBrowser
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSettingsSubController
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  CSubPanelShaderCache
+	  {
+	  	render_bg
+	  	{
+	  		0=fill(x0,y0,x1,y1,none)
+	  	}
+	  }
+	  
+	  //Friend
+	  CFriendsListSubPanel
+	  {
+	  	render_bg
+	  	{
+	  		0="fill(x0,y0,x1,y1,none)"
+	  	}
+	  }
+	  CFriendsFriendsPage
+	  {
+	  	render_bg
+	  	{
+	  		0="fill(x0,y0,x1,y1,JackMyth.HalfTranslucent)"
+	  	}
+	  }
+	  
+	  // Use Offline Background
+	  CUseOfflineModeDialog
+	  {
+		  textcolor="0 0 0 255"
+		  minimum-height=344
+	  	render_bg
+	  	{
+	  		0="image_scale(x0,y0,x1,y1,graphics\JackMyth\UseOffline)"
+	  	}
+	  }
+	  
+	  // Notification Overrides
+	  // Seems doesn't work
+    CAchievmentNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+    BroadcastApproveNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		BroadcastInviteNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		BroadcastPublicStateNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CBroadcastRecorderNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		BroadcastUploadErrorNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		BroadcastViewerNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CChatInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CChatMsgNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CClanEventNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CClanInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CFriendInGameNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CFriendInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CFriendOnlineNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CGameInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		GiftReceivedNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		ItemReceivedNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		NewTurnsNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		TradInvitationNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+		CVoiceChatInviteNotification { render { 0="fill( x0 , y0 , x1, y1, DefaultBackground)" } }
+  }
+  
+  //"layout"
+  //{
+  //	place{ controls="OKButton, CancelButton"}
+  //}
+  
+}
