@@ -54,25 +54,32 @@ namespace Threshold_Miku_Customizer
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = false;
-            string TempZipFile = Path.GetTempFileName() + ".zip";
+            string TempZipFile = Path.GetTempFileName();
+            File.Delete(TempZipFile);
+            TempZipFile = TempZipFile + ".zip";
             System.IO.File.WriteAllBytes(TempZipFile, (byte[])TargetResource.GetObject("Core"));
-            Ionic.Zip.ZipFile zipf = new Ionic.Zip.ZipFile(TempZipFile);
-            long totalSize=0;
-            foreach (var entry in zipf)
+
             {
-                totalSize += entry.UncompressedSize;
+                Ionic.Zip.ZipFile zipf = new Ionic.Zip.ZipFile(TempZipFile);
+                long totalSize = 0;
+                foreach (var entry in zipf)
+                {
+                    totalSize += entry.UncompressedSize;
+                }
+                progressBar1.Maximum = (Int32)totalSize;
+                zipf.ExtractProgress += new EventHandler<Ionic.Zip.ExtractProgressEventArgs>(onExtractProgress);
+                try
+                {
+                    zipf.ExtractAll(TargetPath, Ionic.Zip.ExtractExistingFileAction.OverwriteSilently);
+                    zipf.Dispose();
+                }
+                catch
+                {
+                    MessageBox.Show("Error");
+                    Close();
+                }
             }
-            progressBar1.Maximum = (Int32)totalSize;
-            zipf.ExtractProgress += new EventHandler<Ionic.Zip.ExtractProgressEventArgs>(onExtractProgress);
-            try
-            {
-                zipf.ExtractAll(TargetPath, Ionic.Zip.ExtractExistingFileAction.OverwriteSilently);
-            }
-            catch
-            {
-                MessageBox.Show("Error");
-                Close();
-            }
+            File.Delete(TempZipFile);
 
             //Save Backgrounds
             if(CodeVars["MainUI.BG"]!="")

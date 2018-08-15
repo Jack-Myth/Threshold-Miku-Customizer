@@ -107,9 +107,8 @@ namespace Threshold_Miku_Customizer
             folderBrowserDialog1.ShowDialog();
             if (folderBrowserDialog1.SelectedPath != "")
             {
-                ResourceManager ThresholdMikuLight = new ResourceManager("Threshold_Miku_Customizer.ThresholdMikuLight", Assembly.GetExecutingAssembly());
                 Exporting xExporting = new Exporting();
-                xExporting.Export(ThresholdMikuLight, CodeVars, folderBrowserDialog1.SelectedPath);
+                xExporting.Export(CurrentTheme, CodeVars, folderBrowserDialog1.SelectedPath);
             }
         } 
 

@@ -96,7 +96,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(181, 23);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Ver 0.1 Beta";
+            this.label5.Text = "Ver 0.3 Beta";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // About
